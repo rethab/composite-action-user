@@ -4,4 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: rethab/composite-action-test@main
+      - uses: actions/checkout@v2
+        with:
+          repository: rethab/composite-action-test
+          ref: main
+          path: .actions/composite
+      - uses: ./.actions/composite
