@@ -8,5 +8,4 @@ jobs:
         with:
           repository: rethab/composite-action-test
           ref: main
-          path: .actions/composite
-      - uses: ./.actions/composite
+      - uses: ./
